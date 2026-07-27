@@ -268,7 +268,7 @@ export const botConfig = {
 
     // Allowed winner count range.
     minimumWinners: 1,
-    maximumWinners: 10,
+    maximumWinners: 5,
 
     // Allowed giveaway duration range in milliseconds.
     // 300000 = 5 minutes.
@@ -425,7 +425,7 @@ export const botConfig = {
         name: "👤 Humans",
         description: "Total human members (non-bots)",
         getCount: (guild) =>
-          guild.members.cache.filter((m) => !m.user.bot).size.toString(),
+          guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
     },
   },
@@ -439,7 +439,7 @@ export const botConfig = {
     errorOccurred: "An error occurred while executing this command.",
     missingPermissions:
       "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
+    commandDisabled: "This command has been disabled By Anali/Chico.",
     maintenanceMode: "The bot is currently in maintenance mode.",
   },
 
