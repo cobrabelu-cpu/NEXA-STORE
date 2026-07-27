@@ -64,7 +64,7 @@ export default {
             await dmChannel.send({
                 embeds: [
                     successEmbed(
-                        anonymous ? "Message from the Staff Team" : `Message from ${interaction.user.tag}`,
+                        anonymous ? "NEXA MANAGMENT" : `Message from ${interaction.user.tag}`,
                         sanitized
                     ).setFooter({
                         text: `You cannot reply to this message. | Logger ID: ${interaction.id}`
