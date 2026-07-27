@@ -9,7 +9,7 @@ import { replyUserError, ErrorTypes } from '../../utils/errorHandler.js';
 export default {
     data: new SlashCommandBuilder()
         .setName("dm")
-        .setDescription("Send a direct message to a user (Staff only)")
+        .setDescription("MANAGMENT TEAM")
         .addUserOption(option =>
             option
                 .setName("user")
