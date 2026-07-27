@@ -66,7 +66,7 @@ export default {
         }
 
         const rawMessage = interaction.options.getString('message');
-        const message = sanitizeInput(rawMessage, 6000);
+        const message = sanitizeInput(rawMessage, 9000);
 
         if (!message) {
             return replyUserError(interaction, {
