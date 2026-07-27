@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Nexa Store",     // this is what people actually see
+        state: "5 Year 29/7/2026",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
