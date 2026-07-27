@@ -38,7 +38,7 @@ export default {
                 .setName('message')
                 .setDescription('The message the bot should send')
                 .setRequired(true)
-                .setMaxLength(2000),
+                .setMaxLength(6000),
         )
         .addChannelOption((option) =>
             option
@@ -66,7 +66,7 @@ export default {
         }
 
         const rawMessage = interaction.options.getString('message');
-        const message = sanitizeInput(rawMessage, 2000);
+        const message = sanitizeInput(rawMessage, 6000);
 
         if (!message) {
             return replyUserError(interaction, {
