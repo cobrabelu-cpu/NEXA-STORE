@@ -9,7 +9,7 @@ export default {
         .setDescription('Get the current time in different timezones')
         .addStringOption(option =>
             option.setName('timezone')
-                .setDescription('The timezone to display (e.g., UTC, America/New_York)')
+                .setDescription('The timezone to display (e.g., UTC, India/New_York)')
                 .setRequired(false)),
 
     async execute(interaction) {
