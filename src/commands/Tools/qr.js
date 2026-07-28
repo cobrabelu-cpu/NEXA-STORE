@@ -9,3 +9,5 @@ module.exports = {
         await interaction.reply({ files: [qrCode] });
     },
 };
+```
+```
