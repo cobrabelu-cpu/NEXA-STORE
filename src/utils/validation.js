@@ -141,7 +141,7 @@ export function sanitizeInput(input, maxLength = 2000) {
   return input
     .trim()
     .substring(0, maxLength)
-    .replace(/\[\\x00-\\x08\\x0E-\\x1F\]/g,")\'
+    .replace(/[\x00-\x1F\x7F]/g, '');
 }
 
 export function sanitizeMention(mention) {
